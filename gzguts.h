@@ -42,7 +42,7 @@
 #  define WIDECHAR
 #endif
 
-#ifdef WINAPI_FAMILY
+#if defined(_WIN32) || defined(WINAPI_FAMILY)
 #  define open _open
 #  define read _read
 #  define write _write
